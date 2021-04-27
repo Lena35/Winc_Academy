@@ -8,9 +8,40 @@ body
 {
     border: 5px solid black;
     font-size: large;
+    padding: 5px;
+}
+
+ol
+{
+    padding-left: 35px !important;
+    margin: 0 auto;
+    width: 25%;
 }
 
 #green-background
 {
     background-color: green;
+    padding: 5px;
+}
+
+nav, header, main, footer
+{
+    border: 2px solid cyan;
+    margin: 15px;
+    padding: 5px;
+}
+
+.navlist ul
+{
+    list-style-type: none;
+}
+
+.navlist ul li
+{
+    display: inline;
+}
+
+.navlist ul li a
+{
+    padding-right: 15px;
 }
