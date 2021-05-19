@@ -1,0 +1,77 @@
+body
+{
+    color: red;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.black-border
+{
+    border: 5px solid black;
+    font-size: 20px;
+    padding: 5px;
+}
+
+ol
+{
+    padding-left: 35px !important;
+    margin: 0 auto;
+    width: 25%;
+}
+
+#green-background
+{
+    background-color: green;
+    padding: 5px;
+}
+
+nav, header, main, footer
+{
+    border: 2px solid cyan;
+    margin: 15px;
+    padding: 5px;
+}
+
+.navlist ul
+{
+    list-style-type: none;
+}
+
+.navlist ul li
+{
+    display: inline;
+}
+
+.navlist ul li a
+{
+    padding-right: 15px;
+}
+
+@media (max-width: 400px)
+{
+    .black-border 
+    {
+        border: none;
+    }
+
+    #green-background
+    {
+        background-color: white;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    body 
+    {
+        background-color: lightgrey;
+        color: green;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .black-border
+    {
+        font-size: 15px;
+    }
+}
