@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navlist">
+        <ul>
+            <li><a href="index.html">Naar home</a></li>
+            <li><a href="about.html" id="green-background">Naar about</a></li>
+        </ul>
+    </nav>
+
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+            <label>Naam: <input type="text" name="name"></label>
+        </p>
+        <p>
+            <label>Email: <input type="email" name="email"></label>
+        </p>
+        <p>
+            <label>Telefoonnummer: <input type="tel" name="phone"></label>
+        </p>
+        <p>
+            <label>Leeftijd: <input type="number" name="age"></label>
+        </p>
+        <p>
+            <label>Geboortedatum: <input type="date" name="date"></label>
+        </p>
+        <p>
+            <label>
+                Gender: <br><input type="radio" name="gender" value="Female">Female<br>
+                <input type="radio" name="gender" value="Male">Male
+            </label>
+        </p>
+        <p>
+            <label>
+                Favoriete cuisine: <br><input type="checkbox" name="cuisine" value="Frans">Frans<br>
+                <input type="checkbox" name="cuisine" value="Italiaans">Italiaans<br>
+                <input type="checkbox" name="cuisine" value="Spaans">Spaans<br>
+                <input type="checkbox" name="cuisine" value="Arabisch">Arabisch
+            </label>
+        </p>
+        <p>
+            <label>Favoriete kleur van short: <input type="color" name="color"></label>
+        </p>
+        <p>
+            <label>Biografie: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+            <label>Upload je laatste recept: <input type="file" name="file"></label>
+        </p>
+        <p>
+            <label>Url naar je recepten website: <input type="url" name="url"></label>
+        </p>
+        <p>
+            <button type="reset">Reset formulier</button>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+</body>
+
+</html>
