@@ -1,6 +1,53 @@
+body
+{
+    max-width: 75%;
+    margin: auto;
+}
+
+.body-background
+{
+    background-image: url("swords2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-overlay
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 25px 25px;
+}
+
+nav, main, h1
+{
+    font-family: 'Kanit', sans-serif;
+}
+
+.signs
+{
+    display: block;
+    margin: 0 auto;
+}
+
+section
+{
+    max-width: 75ch;
+}
+
 h1
 {
     text-align: center;
+    font-size: 60px;
+}
+
+h3
+{
+    color: white;
+    margin-top: 0;
+    font-size: 40px;
 }
 
 ul
@@ -9,22 +56,70 @@ ul
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow: hidden;
+    background-color: #333;
 }
 
 li
 {
-    display: inline;
-
+    float: left;
 }
 
 li a
 {
     text-decoration: none;
-    font-size: 20px;
-    padding-right: 20px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    padding: 14px 90px;
 }
 
-#home, #books, #games, #series
+li a:hover, .active
 {
-    text-decoration: underline;
+    background-color: #111;
+}
+
+.contact
+{
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px 50px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+textarea
+{
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 375px)
+{
+    body
+    {
+        max-width: 100%;
+    }
+
+    .signs
+    {
+        visibility: hidden;
+    }
+
+    .body-background
+    {
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 426px)
+{
+    body 
+    {
+        max-width: 100%;
+    }
+    
+    .signs
+    {
+        visibility: hidden;
+    }
 }
